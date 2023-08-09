@@ -1,5 +1,5 @@
 @extends('include.layout')
-@section('title') Sysges Don Bosco - Accueil @endsection
+@section('title') Syges Don Bosco - Accueil @endsection
 @section('contenu')
     <div class="pagetitle">
       <h1>Dashboard</h1>

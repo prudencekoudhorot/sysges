@@ -60,7 +60,7 @@ class EntreesProduitsController extends Controller
         if ($request->path_bordereau) {  /*session documenst*/
 
 
-            $allowedfileExtension = ['jpg', 'jpeg', 'png', 'JPG', 'JPEG', 'PNG', 'pdf', 'PDF'];
+            $allowedfileExtension = ['jpg', 'jpeg', 'png', 'JPG', 'JPEG', 'PNG', 'pdf', 'PDF','webp','WEBP'];
             $images = $request->path_bordereau;
 
 

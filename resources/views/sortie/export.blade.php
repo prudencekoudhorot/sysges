@@ -246,10 +246,19 @@
             </td>
             <td style="text-align: right;">{{$detail->quantite}}</td>
             <td style="text-align: right;">{{$detail->prix_unitaire}}</td>
-            <td style="text-align: right;">{{$detail->prix_total}}</td>>
+            <td style="text-align: right;">{{$detail->prix_total}}</td>
             <td style="text-align: right;">{{$detail->reference}}</td>
             <td style="text-align: right;">{{$detail->observation}}</td>
+            </tr>
           @endforeach
+          @php
+          $prix_unitaire = DB::table('details_sorties')->where('sorties_id', $sortie->id)->sum('details_sorties.prix_unitaire');
+          $prix_total = DB::table('details_sorties')->where('sorties_id', $sortie->id)->sum('details_sorties.prix_total');
+          @endphp
+          <tr>
+            <td colspan="4" style="text-align: center;">Total</td>
+            <td colspan="3"  style="text-align: right;">{{$prix_total}}</td>
+          </tr>
         </tbody>
       </table>
   </div>

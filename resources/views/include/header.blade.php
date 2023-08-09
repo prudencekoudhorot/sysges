@@ -7,7 +7,7 @@ $user_name = Auth::user()->name ;
     <div class="d-flex align-items-center justify-content-between">
       <a href="{{route('dashboard')}}" class="logo d-flex align-items-center">
         <img src="{{asset('assets/img/logo.png')}}" alt="">
-        <span class="d-none d-lg-block">Sysges Don Bosco</span>
+        <span class="d-none d-lg-block">Syges Don Bosco</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
